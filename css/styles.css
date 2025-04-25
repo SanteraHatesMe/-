@@ -195,7 +195,7 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    width: 360px;
+    width: 260px;
     height: 100%;
     background-color: var(--color-primary-light);
     transform: translateX(100%);
@@ -718,6 +718,9 @@ header {
 .addres-icons {
     display: flex;
     gap: 22px;
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+    }
 }
 
 .addres-icon {
@@ -788,6 +791,7 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px 0;
     transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1;
 }
 
 .backdrop.is-hidden {
@@ -809,6 +813,8 @@ header {
 
     @media screen and (max-width: 768px) {
         padding: 48px;
+        max-width: 480px;
+        max-height: 480px;
     }
 }
 
